@@ -13,17 +13,32 @@
         </style>
     </head>
     <body>
+        <button onclick="myfunction()">Hide</button>
         <div class="city">
-            <h1>Islamabad</h1>
+            <h1 class="city">Islamabad</h1>
             <p>Islamabad is the Capital of Pakistan</p>
         </div>
         <div class="city">
-            <h1>London</h1>
+            <h1 class="city">London</h1>
             <p>London Is the Capital of England</p>
         </div>
         <div class="city">
-            <h1>Paris</h1>
+            <h1 class="city">Paris</h1>
             <p>Paris is the Capital Of France</p>
         </div>
+        <script>
+            function myfunction() {
+                var x = document.getElementsByClassName("city");
+                for (var i=0; i<x.length; i++) {
+                    x[i].style.display= "none";
+                }
+            }
+        </script>
+        <h1>Irame</h1>
+        <iframe src="https://www.google.com" title="Ifram Example" name="iframe_a" style="width: 400px; height: 400px; border: 2px solid tomato;"></iframe>
+        <p><a href="https://www.youtube.com" target="iframe_a">Youtube</a></p>
+        <p><a href="https://www.facebook.com/pakolive.pk" target="iframe_a">Facebook</a></p>
+
+    
     </body>
 </html>
