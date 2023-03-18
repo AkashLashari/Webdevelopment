@@ -22,5 +22,37 @@
                 document.getElementById("imge").src= pic;
             }
         </script>
+        <div>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date();">Date</button>
+        <p id="demo"></p>
+    </div>
+    <div>
+        <p id="time"></p>
+        <button type="button" onclick="fuc()">Time</button>
+        <script>
+            function fuc(){
+                document.getElementById("time").innerHTML = Date();
+            }
+        </script>
+    </div>
+            <div>
+        <p id="hello"></p>
+        <script>
+            document.getElementById("hello").innerHTML="hello world";
+        </script>
+        </div>
+        <div>
+            <p id="p">Hello</p>
+            <button type="button" onclick="p()">Click me</button>
+            <script>
+                function p(){
+                document.getElementById("p").style.color="red";
+                document.getElementById("p").style.backgroundColor="yellow";
+                document.getElementById("p").style.fontSize="50px";
+            }
+            </script>
+        </div>
+        
+    
     </body>
 </html>
