@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bulb</title>
+    </head>
+    <body>
+        <img src="images/pic_bulboff.gif" id="imge" alt="" width="300px" height="300px" >
+        <button type="button" onclick="light(0)">off</button>
+        <button type="button" onclick="light(1)">On</button>
+        <script>
+            var pic;
+            function light(sw)
+            {
+                if(sw==0)
+                {
+                    pic = "images/pic_bulboff.gif"
+                }
+                else
+                {
+                    pic = "images/pic_bulbon.gif"
+                }
+                document.getElementById("imge").src= pic;
+            }
+        </script>
+    </body>
+</html>
