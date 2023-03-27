@@ -8,47 +8,45 @@
             box-sizing: border-box;
            }
            header{
-            background-color: #e5e5e5;
+            background-color: azure;
             text-align: center;
-            padding: 30px;
-
+            padding: 50px;
            }
-           .menu{
-            float: left;
+           #left{
             width: 20%;
+            float: left;
             text-align: center;
            }
-           .menu a{
-            background-color: #e5e5e5;
+           #left a{
             width: 100%;
+            display: block;
+            background-color: aliceblue;
             padding: 8px;
             margin-top: 7px;
-            display: block;
-            color: black;
            }
-           .main{
-            float: left;
-            padding: 0 20px;
+           #main{
+            padding: 20px;
             width: 60%;
-           }
-           .right{
             float: left;
             text-align: center;
-            background-color: #e5e5e5;
-            padding: 15px;
+           }
+           #right{
             width: 20%;
+            float: left;
+            background-color: beige;
+            padding: 0 20px;
             margin-top: 7px;
            }
            footer{
-            background-color: #a5a5a5;
-            text-align: center;
+            background-color: aliceblue;
             padding: 15px;
-
+            text-align: center;
            }
-           @media only screen and (max-width: 600px){
-            .main,.menu, .right{
+           @media only screen and (max-width: 600px) {
+            #left, #main, #right {
                 width: 100%;
             }
+            
            }
             
 
@@ -56,27 +54,24 @@
 
     </head>
     <body>
-        <header>
-            <h1>Hello world</h1>
-        </header>
+        <header>Hellow World</header>
         <div style="overflow: auto;">
-        <div class="menu">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+        <div id="left">
+            <a href="#">link 1</a>
+            <a href="#">link 2</a>
+            <a href="#">link 3</a>
             <a href="#">Link 4</a>
         </div>
-        <div class="main">
-            <h2>Lorum Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <div id="main">
+            <h1>Loreum Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> 
         </div>
-        <div class="right">
-            <h2>About</h2>
+        <div id="right">
+            <h1>About</h1>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
         </div>
     </div>
-        <footer>
-            <p>© copyright w3schools.com</p>
-        </footer>
+    <footer>© copyright w3schools.com</footer>
+        
     </body>
 </html>
